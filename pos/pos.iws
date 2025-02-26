@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="45a6f015-4d7b-465d-871a-cc8425e8cab9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/grails-app/views/plaza/create.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/plaza/edit.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/plaza/index.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/plaza/search.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../schoolmanagement/grails-app/views/faculty/agricultural.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../schoolmanagement/grails-app/views/faculty/engineering.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../schoolmanagement/grails-app/views/faculty/home.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../schoolmanagement/grails-app/views/faculty/index.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../schoolmanagement/grails-app/views/faculty/lifeScience.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schoolmanagement/schoolmanagement.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/../schoolmanagement/schoolmanagement.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schoolmanagement/schoolmanagement.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../schoolmanagement/schoolmanagement.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schoolmanagement/target/classes/resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/../schoolmanagement/target/classes/resources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schoolmanagement/target/stacktrace.log" beforeDir="false" afterPath="$PROJECT_DIR$/../schoolmanagement/target/stacktrace.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2tWNJjGMeupuU2ZphROzlMRf2I8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectPane">
+    <subPane>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="@grails.project.name@" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="@grails.project.name@" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="@grails.project.name@" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </subPane>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="0.5" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <showStructure ProjectPane="false" />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="false" name="Grails:@grails.project.name@" type="GrailsRunConfigurationType" factoryName="Grails Application">
+      <module name="@grails.project.name@" />
+      <setting name="vmparams" value="" />
+      <setting name="grailsparams" value="" />
+      <setting name="hostik" value="localhost" />
+      <setting name="port" value="8080" />
+      <setting name="jndi" value="false" />
+      <setting name="recomp" value="false" />
+      <setting name="recompileFreq" value="3" />
+      <setting name="launchBrowser" value="true" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="45a6f015-4d7b-465d-871a-cc8425e8cab9" name="Changes" comment="" />
+      <created>1740463803727</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740463803727</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="10" y="10" width="1260" height="984" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6623068" order="0" side_tool="false" />
+    </layout>
+  </component>
+</project>

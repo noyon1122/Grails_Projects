@@ -4,16 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2338180a-a3a3-4a57-8d29-d329b08dbd37" name="Changes" comment="" />
+    <list default="true" id="2338180a-a3a3-4a57-8d29-d329b08dbd37" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/grails-app/views/faculty/agricultural.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/faculty/engineering.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/faculty/home.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/faculty/index.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/faculty/lifeScience.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schoolmanagement.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/schoolmanagement.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schoolmanagement.iws" beforeDir="false" afterPath="$PROJECT_DIR$/schoolmanagement.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/stacktrace.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/stacktrace.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2tTHYMXlUJdEy3YZzXWCGqacauJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectPane">
     <subPane>
       <PATH>
@@ -53,8 +69,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/Desktop/GrailsProject/schoolmanagement/lib"
+    "last_opened_file_path": "C:/Users/User/Desktop/GrailsProject/pos"
   }
 }]]></component>
   <component name="RecentsManager">
