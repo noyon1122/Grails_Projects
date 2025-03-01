@@ -78,7 +78,6 @@ class PlazaController {
     //search plaza item
     def search() {
         def query = params.name
-        println(query)
 
         if (query) {
             def plazas = Plaza.createCriteria().list {

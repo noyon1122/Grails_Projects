@@ -5,6 +5,7 @@
 <body>
 <div>Plaza List</div>
 
+
 <table border="1">
 <tr>
 <th>Plaza Id</th>
@@ -32,6 +33,7 @@
 </tr>
 </g:each>
 </table>
+
 
 </body>
 </html>
