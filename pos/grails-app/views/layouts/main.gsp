@@ -18,7 +18,9 @@
 		<r:layoutResources />
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner">Pos</div>
+		<div id="grailsLogo" role="banner" style="display: flex; align-items: center; justify-content: center; width: full; height: 60px; background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); color: black; font-size: 32px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">Welcome to Pos</div>
+
+        </body>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>

@@ -5,38 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45a6f015-4d7b-465d-871a-cc8425e8cab9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/grails-app/views/customer/create.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/customer/createdealer.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/customer/customer.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/customer/dealer.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/customer/edit.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/customer/index.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/customer/search.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/customer/view.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/dealer/create.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/dealer/edit.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/dealer/index.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/dealer/search.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/dealer/view.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../importantInfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../importantInfo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/controllers/pos/PlazaController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/pos/PlazaController.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/salesCertificate/create.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/salesCertificate/index.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/salesCertificate/search.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/salesCertificate/view.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/views/plaza/search.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/plaza/search.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pos.iws" beforeDir="false" afterPath="$PROJECT_DIR$/pos.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ApplicationResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ApplicationResources.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BootStrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BootStrap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BuildConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BuildConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UrlMappings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UrlMappings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pos/Plaza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/Plaza.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pos/PlazaController$_search_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/PlazaController$_search_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pos/PlazaController$_search_closure1_closure2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/PlazaController$_search_closure1_closure2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pos/PlazaController$_search_closure1_closure3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pos/PlazaController$_search_closure1_closure4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pos/PlazaController$_search_closure1_closure5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pos/PlazaController$_search_closure1_closure6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pos/PlazaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/PlazaController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/stacktrace.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/stacktrace.log" afterDir="false" />
     </list>
@@ -91,15 +65,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/Desktop/GrailsProject/pos/grails-app/views/dealer"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/GrailsProject/pos/grails-app/views/dealer&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\GrailsProject\pos\grails-app\views\dealer" />
