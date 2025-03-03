@@ -1,48 +1,61 @@
 <html>
 <head>
-<meta name="layout" content="main"/>
+
+    <title>Plaza List</title>
+      <g:render template="/layouts/heading" />
+
+
 </head>
 <body>
-<div style="font-size: 24px; font-weight: bold; margin: 5px; color: #2c3e50;">Plaza List</div>
 
-<g:link action="create" style="display: inline-block; padding: 10px 10px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 10px;">Add New Plaza</g:link>
+    <!-- Page Title -->
+    <div class="page-title">Plaza List</div>
 
-<div style="margin: 5px;">
-    <g:form action="search" method="GET" style="display: flex; gap: 10px; align-items: center;">
-        <g:textField name="name" style="padding: 8px; border: 1px solid #ccc; border-radius: 5px; width: 200px;" placeholder="Search"/>
+    <!-- Add New Plaza Link -->
+    <div class="nav-links">
+        <g:link action="create">➕ Add New Plaza</g:link>
+    </div>
 
-        <g:submitButton name="Search" style="padding: 8px 16px; background-color: #2ecc71; color: white; border: none; border-radius: 5px; cursor: pointer;"/>
-    </g:form>
-</div>
+    <!-- Search Form -->
+    <div class="search-container">
+        <g:form action="search" method="GET" style="display: flex; gap: 15px; align-items: center;">
+            <g:textField name="name" class="search-input" placeholder="🔍 Search"/>
+            <g:submitButton name="Search" value="Search" class="search-button"/>
+        </g:form>
+    </div>
 
-
-<table border="1">
-<tr>
-<th>Plaza Id</th>
-<th>Name</th>
-<th>Email</th>
-<th>Phone</th>
-<th>Address</th>
-<th>Status</th>
-<th>Vat</th>
-<th>Action</th>
-</tr>
-<g:each var="plaza" in="${plazas}">
-<tr>
-<td>${plaza.id}</td>
-<td>${plaza.name}</td>
-<td>${plaza.email}</td>
-<td>${plaza.phone}</td>
-<td>${plaza.address}</td>
-<td>${plaza.status}</td>
-<td>${plaza.vat}</td>
-<td>
-<g:link action="edit" id="${plaza.id}">Edit</g:link>
-<g:link action="delete" id="${plaza.id}">Delete</g:link>
-</td>
-</tr>
-</g:each>
-</table>
+    <!-- Plaza Table -->
+    <table class="customer-table">
+        <thead>
+            <tr>
+                <th>Plaza Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Status</th>
+                <th>Vat</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <g:each var="plaza" in="${plazas}">
+                <tr>
+                    <td>${plaza.id}</td>
+                    <td>${plaza.name}</td>
+                    <td>${plaza.email}</td>
+                    <td>${plaza.phone}</td>
+                    <td>${plaza.address}</td>
+                    <td>${plaza.status}</td>
+                    <td>${plaza.vat}</td>
+                    <td class="action-links">
+                        <g:link action="edit" id="${plaza.id}" class="edit-link">✏️ Edit</g:link>
+                        <g:link action="delete" id="${plaza.id}" class="delete-link" onclick="return confirm('Are you sure?')">🗑️ Delete</g:link>
+                    </td>
+                </tr>
+            </g:each>
+        </tbody>
+    </table>
 
 </body>
 </html>
