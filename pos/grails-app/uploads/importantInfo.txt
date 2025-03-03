@@ -1,0 +1,16 @@
+integrate with IntelliJ idea command ===>> grails integrate-with --IntelliJ
+
+
+//mysql database connectivity
+
+==>> in datasource.groovy
+
+dataSource {
+    pooled = true
+    driverClassName = "com.mysql.jdbc.Driver"
+    dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+    username = "root"
+    password = "123456"
+} 
+
+url ===>>   url = "jdbc:mysql://localhost/studentmanagement"
