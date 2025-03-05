@@ -29,6 +29,13 @@ grails.mime.types = [
     xml:           ['text/xml', 'application/xml']
 ]
 
+minio = [
+        url: "https://minio-console.waltonbd.com",  // MinIO server URL
+        accessKey: "",
+        secretKey: "",
+        bucketName: "wc-pos"
+]
+
 // URL Mapping Cache Max Size, defaults to 5000
 //grails.urlmapping.cache.maxsize = 1000
 
