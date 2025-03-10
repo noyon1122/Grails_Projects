@@ -120,12 +120,14 @@
 <div class="pos-nav">
         <ul style=" width: 80%; margin: 20px auto; margin-top: 0;  padding-left: 0; padding-top: 7px; padding-bottom: 7px;">
             <li><a href="/pos/"> Home </a> </li>
-            <li><a href="/pos/Plaza/index"> Plaza List</a></li>
+            <li><a href="/pos/plaza/index"> Plaza List</a></li>
+             <li><a href="/pos/product/list"> Product List</a></li>
+             <li><a href="/pos/customer/index"> Customer List </a> </li>
             <li><a href="/pos/dealer/index"> Dealer List</a> </li>
-            <li><a href="/pos/customer/index"> Customer List </a> </li>
             <li><a href="/pos/interPlazaDelivery/index"> Inter Plaza Delivery List</a> </li>
-            <li><a href="/pos/fileUpload/index"> File Upload</a></li>
             <li><a href="/pos/salesCertificate/index"> Sales Certificate</a></li>
+            <li><a href="/pos/sale/list"> Sales List</a></li>
+
 
         </ul>
 </div>

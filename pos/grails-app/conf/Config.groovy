@@ -14,6 +14,7 @@
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
 grails.mime.use.accept.header = false
+grails.server.port.http = 8081
 grails.mime.types = [
     all:           '*/*',
     atom:          'application/atom+xml',
@@ -29,12 +30,6 @@ grails.mime.types = [
     xml:           ['text/xml', 'application/xml']
 ]
 
-minio = [
-        url: "https://minio-console.waltonbd.com",  // MinIO server URL
-        accessKey: "",
-        secretKey: "",
-        bucketName: "wc-pos"
-]
 
 // URL Mapping Cache Max Size, defaults to 5000
 //grails.urlmapping.cache.maxsize = 1000

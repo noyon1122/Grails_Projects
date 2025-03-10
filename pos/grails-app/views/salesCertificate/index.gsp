@@ -45,7 +45,7 @@
                     <td>${sale.motorNo}</td>
                     <td><g:formatDate date="${sale.createdDate}" format="MM/dd/yyyy" /></td>
                     <td class="sale-actions">
-                        <g:link action="view" id="${sale.id}" class="sale-action view">👁️ View</g:link>
+                        <g:link action="view" id="${sale.id}" class="sale-action view">View</g:link>
                     </td>
                 </tr>
             </g:each>

@@ -4,16 +4,18 @@ class Customer {
 
     String accountNo
     String customerName
-    String type
-    String product
+    String customerAddress
+    String custId
+    String customerNid
     String mobile
-    Integer balance
-    String isLitigate
-    String isRecovery
+
+
+    static hasMany = [sales: Sale]
 
     static constraints = {
         accountNo blank: false, unique: true
         mobile blank: false, unique: true
+        customerAddress nullable:false
 
 
     }

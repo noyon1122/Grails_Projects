@@ -49,8 +49,8 @@
                     <td>${plaza.status}</td>
                     <td>${plaza.vat}</td>
                     <td class="action-links">
-                        <g:link action="edit" id="${plaza.id}" class="edit-link">✏️ Edit</g:link>
-                        <g:link action="delete" id="${plaza.id}" class="delete-link" onclick="return confirm('Are you sure?')">🗑️ Delete</g:link>
+                        <g:link action="edit" id="${plaza.id}" class="edit-link"> Edit</g:link>
+                        <g:link action="delete" id="${plaza.id}" class="delete-link" onclick="return confirm('Are you sure?')"> Delete</g:link>
                     </td>
                 </tr>
             </g:each>

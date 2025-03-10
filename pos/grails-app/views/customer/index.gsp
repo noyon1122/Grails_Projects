@@ -50,9 +50,9 @@
                     <td>${customer.isLitigate}</td>
                     <td>${customer.isRecovery}</td>
                     <td class="action-links">
-                        <g:link action="edit" id="${customer.id}" class="edit-link">✏️ Edit</g:link>
-                        <g:link action="delete" id="${customer.id}" onclick="return confirm('Are you sure???')" class="delete-link">🗑️ Delete</g:link>
-                        <g:link action="view" id="${customer.id}" class="view-link">👁️ View</g:link>
+                        <g:link action="edit" id="${customer.id}" class="edit-link"> Edit</g:link>
+                        <g:link action="delete" id="${customer.id}" onclick="return confirm('Are you sure???')" class="delete-link"> Delete</g:link>
+                        <g:link action="view" id="${customer.id}" class="view-link"> View</g:link>
                     </td>
                 </tr>
             </g:each>

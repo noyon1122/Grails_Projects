@@ -70,7 +70,7 @@
                     <td>${interPlaza.receivedQty}</td>
                     <td><g:formatDate date="${interPlaza.createdDate}" format="dd/MM/yyyy" /></td>
                     <td class="action-links">
-                        <g:link action="view" id="${interPlaza.id}" class="view-link">👁️ View</g:link>
+                        <g:link action="view" id="${interPlaza.id}" class="view-link">View</g:link>
                     </td>
                 </tr>
             </g:each>

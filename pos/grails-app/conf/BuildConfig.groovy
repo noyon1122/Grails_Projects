@@ -4,7 +4,6 @@ grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
 grails.project.target.level = 1.6
 grails.project.source.level = 1.6
-grails.project.jvmargs = ['-Dhttps.protocols=TLSv1.2']
 
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
@@ -47,8 +46,14 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
 
         compile 'mysql:mysql-connector-java:5.1.49'
-        compile 'io.minio:minio:3.0.1'
+        compile 'io.minio:minio:3.0.6'
+
+
         compile 'org.springframework:spring-web:3.0.7.RELEASE'
+        compile 'com.amazonaws:aws-java-sdk:1.7.4'
+        compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
+        compile 'commons-codec:commons-codec:1.10'
+
 
 
     }

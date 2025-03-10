@@ -1,4 +1,4 @@
-integrate with IntelliJ idea command ===>> grails integrate-with --IntelliJ
+integrate with IntelliJ idea command ===>>grails integrate-with --intellij
 
 
 //mysql database connectivity

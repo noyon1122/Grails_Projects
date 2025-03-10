@@ -52,9 +52,9 @@
                     <td>${dealer.currentStatus}</td>
                     <td><g:formatDate date="${dealer.createdDate}" format="MM/dd/yyyy" /></td>
                     <td class="dealer-actions">
-                        <g:link action="edit" id="${dealer.id}" class="dealer-action edit">✏️ Edit</g:link>
-                        <g:link action="delete" onclick="return confirm('Are you sure???')" id="${dealer.id}" class="dealer-action delete">🗑️ Delete</g:link>
-                        <g:link action="view" id="${dealer.id}" class="dealer-action view">👁️ View</g:link>
+                        <g:link action="edit" id="${dealer.id}" class="dealer-action edit"> Edit</g:link>
+                        <g:link action="delete" onclick="return confirm('Are you sure???')" id="${dealer.id}" class="dealer-action delete"> Delete</g:link>
+                        <g:link action="view" id="${dealer.id}" class="dealer-action view"> View</g:link>
                     </td>
                 </tr>
             </g:each>
