@@ -3,15 +3,20 @@ package pos
 class SaleController {
     def saleService
     def list() {
-        def searchTerm = params.saleNo ?: ""
 
         def sales = Sale.createCriteria().list {
-            if (searchTerm) {
-                eq("saleNo", searchTerm) // Case-insensitive search
+            if (params.saleNo) {
+                eq("saleNo", params.saleNo)
             }
+            if (params.accountNo) {
+                createAlias("customer", "c") // Join with Customer domain
+                eq("c.accountNo", params.accountNo) // Search by accountNo from Customer domain
+            }
+
+
         }
 
-        [sales: sales, searchTerm: searchTerm]
+        [sales: sales, searchParams: params]
 
     }
 

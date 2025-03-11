@@ -5,42 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffd2da6a-d6ab-4a86-928d-2e604a9b81a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../pos/grails-app/views/product/list.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pos/grails-app/views/sale/create.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pos/grails-app/views/sale/list.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pos/grails-app/views/sale/retailSale.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pos/grails-app/views/sale/show.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../importantInfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../importantInfo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/conf/BuildConfig.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/conf/BuildConfig.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/conf/Config.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/conf/Config.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/controllers/pos/StudentController.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/domain/pos/Customer.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/domain/pos/Customer.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/domain/pos/Student.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/services/pos/FileUploadService.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/services/pos/StudentService.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/customer/create.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/customer/create.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/customer/createdealer.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/customer/createdealer.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/customer/dealer.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/customer/dealer.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/customer/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/customer/index.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/dealer/create.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/dealer/create.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/dealer/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/dealer/index.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/fileUpload/index.gsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/fileUpload/view.gsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/interPlazaDelivery/create.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/interPlazaDelivery/create.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/interPlazaDelivery/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/interPlazaDelivery/index.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/layouts/_heading.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/layouts/_heading.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/plaza/create.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/plaza/create.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/plaza/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/plaza/index.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/salesCertificate/create.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/salesCertificate/create.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/salesCertificate/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/salesCertificate/index.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/student/index.gsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/student/view.gsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/lib/minio-3.0.1.jar" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/layouts/_heading.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/sales2/index.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/sales2/list.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/sales2/retailSale.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/sales2/show.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pos/grails-app/controllers/pos/SaleController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/controllers/pos/SaleController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pos/grails-app/views/sale/list.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/grails-app/views/sale/list.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pos/pos.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/pos.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pos/target/classes/pos/SaleController$_list_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/target/classes/pos/SaleController$_list_closure1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pos/target/classes/pos/SaleController$_search_closure2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/target/classes/pos/SaleController$_search_closure2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pos/target/classes/pos/SaleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/target/classes/pos/SaleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pos/target/classes/resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/target/classes/resources.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pos/target/stacktrace.log" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/target/stacktrace.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/test/unit/pos/StudentControllerTests.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/test/unit/pos/StudentControllerTests.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/test/unit/pos/StudentServiceTests.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/test/unit/pos/StudentServiceTests.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pos/test/unit/pos/StudentTests.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../pos/test/unit/pos/StudentTests.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/walton/pos/Plaza.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/index.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/stacktrace.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/stacktrace.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/walton-pos.iws" beforeDir="false" afterPath="$PROJECT_DIR$/walton-pos.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +32,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2u7INQoCDKY9uQMmvPi80oCJhbI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectPane">
     <subPane>
       <PATH>
@@ -96,7 +81,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/WALTON/Desktop/Grails_Projects/walton-pos"
+    "last_opened_file_path": "C:/Users/WALTON/Desktop/Grails_Projects/pos"
   }
 }]]></component>
   <component name="RunManager">

@@ -80,7 +80,9 @@
 
       <div class="sale-search">
           <g:form action="list" method="GET" class="sale-form">
-              <g:textField name="saleNo" action="search" class="sale-input" placeholder="Enter Invoice Number" />
+              <g:textField name="saleNo"  class="sale-input" placeholder="Enter Invoice Number" />
+              <g:textField name="accountNo"  class="sale-input" placeholder="Customer Account No" />
+              <g:textField name="mobile"  class="sale-input" placeholder="Customer Mobile No" />
               <g:submitButton name="search" value="Search" class="sale-submit" />
           </g:form>
       </div>
