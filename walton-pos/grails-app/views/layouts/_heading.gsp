@@ -123,10 +123,10 @@
             <li><a href="/walton-pos/plaza/index"> Plaza List</a></li>
              <li><a href="/walton-pos/product/list"> Product List</a></li>
              <li><a href="/walton-pos/customer/index"> Customer List </a> </li>
-            <li><a href="/walton-pos/dealer/index"> Dealer List</a> </li>
             <li><a href="/walton-pos/interPlazaDelivery/index"> Inter Plaza Delivery List</a> </li>
             <li><a href="/walton-pos/salesCertificate/index"> Sales Certificate</a></li>
-            <li><a href="/walton-pos/sales2/list"> Sales List</a></li>
+            <li><a href="/walton-pos/sales/list"> Sales List</a></li>
+            <li><a href="/walton-pos/dealer/list"> Dealer Application List</a></li>
         </ul>
 </div>
 </body>

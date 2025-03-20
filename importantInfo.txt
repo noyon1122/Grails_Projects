@@ -14,3 +14,45 @@ dataSource {
 } 
 
 url ===>>   url = "jdbc:mysql://localhost/studentmanagement"
+
+
+pdf compress====>>>
+
+def compressPdf(String inputFilePath, String outputFilePath) {
+        try {
+            // Use full path to the Ghostscript executable
+            def ghostscriptPath = "C:/Program Files/gs/gs10.04.0/bin/gswin64c.exe"  // Adjust version and path if necessary
+
+            // Define the Ghostscript command for compression
+            def command = [
+                    ghostscriptPath,
+                    "-sDEVICE=pdfwrite",
+                    "-dCompatibilityLevel=1.4",
+                    "-dPDFSETTINGS=/ebook",  // Medium quality and compression
+                    "-dDownsampleColorImages=true",
+                    "-dColorImageResolution=150",  // Medium resolution for color images
+                    "-dDownsampleGrayImages=true",
+                    "-dGrayImageResolution=150",   // Medium resolution for grayscale images
+                    "-dDownsampleMonoImages=true",
+                    "-dMonoImageResolution=150",   // Medium resolution for monochrome images
+                    "-dNOPAUSE",
+                    "-dQUIET",
+                    "-dBATCH",
+                    "-sOutputFile=${outputFilePath}",
+                    inputFilePath
+            ]
+            // Execute the Ghostscript command
+            def process = command.execute()
+            process.waitFor()
+
+            // Check if the command was successful
+            if (process.exitValue() == 0) {
+                return true // Compression was successful
+            } else {
+                return false // Compression failed
+            }
+        } catch (Exception e) {
+            e.printStackTrace()
+            return false // Error during compression
+        }
+    }

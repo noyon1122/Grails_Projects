@@ -14,7 +14,6 @@
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
 grails.mime.use.accept.header = false
-grails.server.port.http = 8081
 grails.mime.types = [
     all:           '*/*',
     atom:          'application/atom+xml',
@@ -60,10 +59,19 @@ grails.exceptionresolver.params.exclude = ['password']
 
 // configure auto-caching of queries by default (if false you can cache individual queries with 'cache: true')
 grails.hibernate.cache.queries = false
-
+minio {
+    // URL of your MinIO server
+    // This could be the same for both development and production if they are hosted the same way
+    s3Endpoint = ""
+    s3AccessKey = ""
+    s3SecretKey = ""
+    s3BucketName = "wc-pos"
+}
 environments {
     development {
         grails.logging.jul.usebridge = true
+        grails.server.port.http = 8081
+
     }
     production {
         grails.logging.jul.usebridge = false

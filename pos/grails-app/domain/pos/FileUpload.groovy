@@ -1,9 +1,11 @@
 package pos
 
 class FileUpload {
-
     String fileName
-    String filePath
+    String fileUrl
+
     static constraints = {
+        fileName(nullable: false)
+        fileUrl(nullable: true)
     }
 }

@@ -21,13 +21,13 @@ environments {
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:oracle:thin:@192.168.150.169:1521/POSDB"
         }
     }
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:oracle:thin:@192.168.150.169:1521/POSDB"
             pooled = true
             properties {
                maxActive = -1

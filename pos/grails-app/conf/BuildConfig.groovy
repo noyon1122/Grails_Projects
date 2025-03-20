@@ -41,18 +41,38 @@ grails.project.dependency.resolution = {
 
 
     }
+    grails.project.dependency.resolver = "maven"
+    grails.war.dependencies = {
+        // Adding the local JAR similar to Maven-style
+        runtime files('lib/ghost4j-1.0.1.jar')
+    }
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
 
         compile 'mysql:mysql-connector-java:5.1.49'
-        compile 'io.minio:minio:3.0.6'
-
-
+        compile 'com.itextpdf:itextpdf:5.5.13.2'
         compile 'org.springframework:spring-web:3.0.7.RELEASE'
-        compile 'com.amazonaws:aws-java-sdk:1.7.4'
-        compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
-        compile 'commons-codec:commons-codec:1.10'
+        //runtime 'com.oracle:ojdbc6:11.2.0.4'
+        compile 'commons-io:commons-io:2.4'
+
+
+        // aws sdk for java
+        compile 'com.amazonaws:aws-java-sdk-s3:1.11.1000'
+        compile 'com.amazonaws:aws-java-sdk-core:1.11.1000'
+
+        // Jackson library for JSON processing (required by AWS SDK)
+        compile 'com.fasterxml.jackson.core:jackson-databind:2.9.10.1'  // Compatible version
+        compile 'com.fasterxml.jackson.core:jackson-annotations:2.9.10'   // Ensure annotations are included
+        compile 'com.fasterxml.jackson.core:jackson-core:2.9.10'   // Core Jackson library
+
+        // Add Apache HttpClient dependencies (required by AWS SDK)
+        compile 'org.apache.httpcomponents:httpclient:4.5.13'
+        compile 'org.apache.httpcomponents:httpcore:4.4.13'
+
+        // Add Joda-Time dependency
+        compile 'joda-time:joda-time:2.10.10'
+        // ----end minio---
 
 
 
