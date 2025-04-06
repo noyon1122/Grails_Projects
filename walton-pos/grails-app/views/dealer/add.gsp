@@ -3,6 +3,7 @@
 <head>
     <title>New Dealer Create</title>
     <g:render template="/layouts/heading" />
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
      <style>
 
@@ -104,7 +105,7 @@
     <h3 style="padding:5px; text-align:center; color:#f2f2f2;">Dealer Information </h3>
     </div>
       <div class="container">
-         <g:form action="add" method="POST" class="form-div">
+         <g:form action="save" method="POST" class="form-div">
          <div class="form-container">
 
 
@@ -112,15 +113,13 @@
 <div class="first-row">
 
        <div class="form-item">
-              <label for="offer">Plaza Name</label>
-              <g:select
-              name="plazaName"
-              id="plazaName"
-              class="form-input"
-              from=""
-              optionKey="id"
-              optionValue="name"
-              noSelection="['':'']" />
+           <label for="offer">Plaza Name</label>
+           <select id="plazaId" name="plaza">
+             <option value="">-- Select Plaza --</option>
+             <g:each var="plaza" in="${plazas}">
+                 <option value="${plaza.id}">${plaza.name}</option>
+             </g:each>
+         </select>
            </div>
         <div class="form-item">
            <label>Dealer Name</label>
@@ -134,7 +133,7 @@
 
        <div class="form-item">
            <label>Id No</label>
-           <g:field name="idNo" type="number" class="form-input" />
+           <g:field name="dealerNumber" type="number" class="form-input" />
        </div>
 </div>
 
@@ -144,39 +143,27 @@
             </div>
 <div class="second-row">
             <div class="form-item">
-               <label for="offer">Division</label>
-               <g:select
-               name="division"
-               id="division"
-               class="form-input"
-               from=""
-               optionKey="id"
-               optionValue="name"
-               noSelection="['':'']" />
+            <label for="divisionSelect">Select Division:</label>
+            <select id="divisionSelect" name="division">
+                   <option value="">-- Select Division --</option>
+                   <g:each var="division" in="${divisions}">
+                       <option value="${division.id}">${division.name}</option>
+                   </g:each>
+               </select>
            </div>
-           <div class="form-item">
-               <label for="offer">District</label>
-               <g:select
-               name="district"
-               id="district"
-               class="form-input"
-               from=""
-               optionKey="id"
-               optionValue="name"
-               noSelection="['':'']" />
-            </div>
+         <div class="form-item">
+        <label for="districtSelect">Select District:</label>
+            <select id="districtSelect" name="district">
+                <option value="">-- Select District --</option>
+            </select>
+         </div>
 
-           <div class="form-item">
-               <label for="offer">Upazila/Thana</label>
-               <g:select
-               name="postOffice"
-               id="postOffice"
-               class="form-input"
-               from=""
-               optionKey="id"
-               optionValue="name"
-               noSelection="['':'']" />
-            </div>
+           <div class="form-item" >
+              <label for="postOfficeSelect">Select PostOffice:</label>
+                 <select id="postOfficeSelect" name="postOffice">
+                     <option value="">-- Select PostOffice --</option>
+                 </select>
+           </div>
 
             <div class="form-item">
                 <label>Union/Poroshoba/City</label>
@@ -211,39 +198,39 @@
 
          <div class="form-item">
             <label>Proprietor Mobile Phone1</label>
-            <g:field name="propMobile1" class="form-input" />
+            <g:textField name="propMobile1" class="form-input" />
             </div>
 
             <div class="form-item">
             <label>Proprietor Mobile Phone2</label>
-            <g:field name="propMobile2" class="form-input" />
+            <g:textField name="propMobile2" class="form-input" />
             </div>
 
            <div class="form-item">
            <label>Proprietor National Id</label>
-           <g:field name="propNid" class="form-input" />
+           <g:textField name="propNid" class="form-input" />
            </div>
  </div>
 
  <div class="four-row">
     <div class="form-item">
            <label>Proprietor Bank Account Name</label>
-           <g:field name="propBankAccountName" class="form-input" />
+           <g:textField name="propBankAccountName" class="form-input" />
            </div>
 
            <div class="form-item">
            <label>Proprietor Bank Account No</label>
-           <g:field name="propBankAccount" class="form-input" />
+           <g:textField name="propBankAccount" class="form-input" />
            </div>
 
            <div class="form-item">
            <label>Proprietor Bank Name</label>
-           <g:field name="propBankName" class="form-input" />
+           <g:textField name="propBankName" class="form-input" />
            </div>
 
            <div class="form-item">
            <label>Proprietor Bank Brunch Name</label>
-           <g:field name="propBankBranch" class="form-input" />
+           <g:textField name="propBankBranch" class="form-input" />
            </div>
 
  </div>
@@ -252,12 +239,12 @@
  <div class="five-row">
   <div class="form-item">
           <label>Proprietor Guardian Name</label>
-          <g:field name="propGuardian" class="form-input" />
+          <g:textField name="propGuardian" class="form-input" />
           </div>
 
           <div class="form-item">
           <label>Proprietor Guardian Mobile no</label>
-          <g:field name="propGuardianMobile" class="form-input" />
+          <g:textField name="propGuardianMobile" class="form-input" />
           </div>
  </div>
 
@@ -274,7 +261,7 @@
 
           <div class="form-item">
            <label>Dealer Point Name</label>
-           <g:field name="dealerPointName" class="form-input" />
+           <g:textField name="dealerPointName" class="form-input" />
           </div>
 
   </div>
@@ -290,7 +277,7 @@
 
         <div class="form-item">
          <label>Remarks</label>
-         <g:field name="remarks" class="form-input" />
+         <g:textField name="remarks" class="form-input" />
         </div>
 
         <div style="background-color:#074352;width:8%">
@@ -298,53 +285,51 @@
           </div>
 
         <div>
-        <table border="1">
-                <thead>
-                    <tr>
-                        <th>Action</th>
-                        <th>Product</th>
-                        <th>Prefix Code</th>
-                    </tr>
-                </thead>
-                <tbody>
+      <table border="1">
+          <thead>
+              <tr>
+                  <th>Action</th>
+                  <th>Product</th>
+                  <th>Prefix Code</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><g:checkBox name="product" value="Refrigerator" checked="${dealer?.products?.containsKey('Refrigerator')}" /></td>
+                  <td>Refrigerator</td>
+                  <td>D-</td>
+                  <g:hiddenField name="prefixCode" value="D-" />
+              </tr>
+              <tr>
+                  <td><g:checkBox name="product" value="TV" checked="${dealer?.products?.containsKey('TV')}" /></td>
+                  <td>TV</td>
+                  <td>DTV-</td>
+                  <g:hiddenField name="prefixCode" value="DTV-" />
+              </tr>
+              <tr>
+                  <td><g:checkBox name="product" value="AC" checked="${dealer?.products?.containsKey('AC')}" /></td>
+                  <td>AC</td>
+                  <td>DAC-</td>
+                  <g:hiddenField name="prefixCode" value="DAC-" />
+              </tr>
+              <tr>
+                  <td><g:checkBox name="product" value="CellCom" checked="${dealer?.products?.containsKey('CellCom')}" /></td>
+                  <td>CellCom</td>
+                  <td>MD-</td>
+                  <g:hiddenField name="prefixCode" value="MD-" />
+              </tr>
+              <tr>
+                  <td><g:checkBox name="product" value="Laptop" checked="${dealer?.products?.containsKey('Laptop')}" /></td>
+                  <td>Laptop</td>
+                  <td>DLAP-</td>
+                  <g:hiddenField name="prefixCode" value="DLAP-" />
+              </tr>
+          </tbody>
+      </table>
 
-                  <tr>
-                      <td><g:checkBox name="product" value="Refrigerator" checked="${'Refrigerator' in params.product}" /></td>
-                      <td>Refrigerator</td>
-                      <td>D-</td>
-                      <g:hiddenField name="prefixCode" value="D-" />
-                  </tr>
-                  <tr>
-                      <td><g:checkBox name="product" value="TV" checked="${'TV' in params.product}" /></td>
-                      <td>TV</td>
-                      <td>DTV-</td>
-                      <g:hiddenField name="prefixCode" value="DTV-" />
-                  </tr>
-                  <tr>
-                      <td><g:checkBox name="product" value="AC" checked="${'AC' in params.product}" /></td>
-                      <td>AC</td>
-                      <td>DAC-</td>
-                      <g:hiddenField name="prefixCode" value="DAC-"  />
-                  </tr>
-                  <tr >
-                     <td><g:checkBox name="product" value="CellCom" checked="${'CellCom' in params.product}" /></td>
-                      <td>CellCom</td>
-                      <td>MD-</td>
-                      <g:hiddenField name="prefixCode" value="MD-"  />
-                  </tr>
-                   <tr>
-                      <td><g:checkBox name="product" value="Laptop" checked="${'Laptop' in params.product}" /></td>
-                      <td>Laptop</td>
-                      <td>DLAP-</td>
-                      <g:hiddenField name="prefixCode" value="DLAP-"  />
-                    </tr>
-
-                </tbody>
-            </table>
 
         </div>
         <div style="">
-         <g:submitButton name="Cancel" style="padding:5px 25px;"/>
           <g:submitButton name="Save" style="padding:5px 25px;"/>
 
        </div>
@@ -352,6 +337,66 @@
           </g:form>
       </div>
   </div>
+
+   <script>
+        $(document).ready(function() {
+
+            // Handle Division selection change
+            $("#divisionSelect").change(function() {
+                var divisionId = $(this).val();
+
+                if (divisionId) {
+                    $.ajax({
+                        url: "${createLink(controller: 'dealer', action: 'getDistrictsByDivision')}/" + divisionId,
+                        type: "GET",
+                        dataType: "json",
+                        success: function(response) {
+                            var districtDropdown = $("#districtSelect");
+                            districtDropdown.empty();
+                            districtDropdown.append('<option value="">-- Select District --</option>');
+
+                            $.each(response, function(index, district) {
+                                districtDropdown.append('<option value="' + district.id + '">' + district.name + '</option>');
+                            });
+                        },
+                        error: function(xhr, status, error) {
+                            alert("Error fetching districts: " + error);
+                        }
+                    });
+                } else {
+                    $("#districtSelect").empty().append('<option value="">-- Select District --</option>');
+                    $("#postOfficeSelect").empty().append('<option value="">-- Select Post Office --</option>');
+                }
+            });
+
+            // Handle District selection change
+            $("#districtSelect").change(function() {
+                var districtId = $(this).val();
+
+                if (districtId) {
+                    $.ajax({
+                        url: "${createLink(controller: 'dealer', action: 'getPostOfficesByDistrict')}/" + districtId,
+                        type: "GET",
+                        dataType: "json",
+                        success: function(response) {
+                            var postOfficeDropdown = $("#postOfficeSelect");
+                            postOfficeDropdown.empty();
+                            postOfficeDropdown.append('<option value="">-- Select Post Office --</option>');
+
+                            $.each(response, function(index, postOffice) {
+                                postOfficeDropdown.append('<option value="' + postOffice.id + '">' + postOffice.name + '</option>');
+                            });
+                        },
+                        error: function(xhr, status, error) {
+                            alert("Error fetching post offices: " + error);
+                        }
+                    });
+                } else {
+                    $("#postOfficeSelect").empty().append('<option value="">-- Select Post Office --</option>');
+                }
+            });
+        });
+    </script>
 
 </body>
 

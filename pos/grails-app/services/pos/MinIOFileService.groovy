@@ -7,24 +7,18 @@ import com.amazonaws.services.s3.AmazonS3ClientBuilder
 import com.amazonaws.services.s3.model.CannedAccessControlList
 import com.amazonaws.services.s3.model.ObjectMetadata
 import com.amazonaws.services.s3.model.PutObjectRequest
-import com.itextpdf.text.DocumentException
-import com.itextpdf.text.pdf.*
+import org.joda.time.DateTime
+import org.joda.time.format.DateTimeFormat
+import org.joda.time.format.DateTimeFormatter
 
-import javax.imageio.IIOImage
-import javax.imageio.ImageIO
-import javax.imageio.ImageWriteParam
-import javax.imageio.ImageWriter
-import javax.imageio.stream.ImageOutputStream
-import java.awt.Graphics2D
-import java.awt.image.BufferedImage
 import java.io.*
-
+import java.text.SimpleDateFormat
 
 class MinIOFileService {
 
     def grailsApplication
 
-    def uploadCompressedPdf(File inputFile) {
+    def uploadPdf(InputStream compressedPdfStream, String originalFilename) {
         System.setProperty("https.protocols", "TLSv1.2")
 
         def s3Endpoint = grailsApplication.config.minio.s3Endpoint
@@ -40,22 +34,18 @@ class MinIOFileService {
                     .withPathStyleAccessEnabled(true)
                     .build()
 
-            if (!inputFile.exists()) {
-                throw new Exception("File does not exist at path: ${inputFile}")
-            }
+            //set current date to the original filename
+            DateTime date_now = new DateTime()
+            DateTimeFormatter dateFormat = DateTimeFormat.forPattern("yyyy-MM-dd_hh-mm-ss-a")
+            String formattedDate = dateFormat.print(date_now)
 
-            // Compress PDF
-            ByteArrayOutputStream compressedPdfStream = compressPdf(inputFile)
-            if (compressedPdfStream == null) {
-                throw new Exception("Failed to compress PDF")
-            }
-
-            // Upload directly to MinIO from memory
-            String objectKey =inputFile.name
+          //take max 5 character from the original filename
+            String objectKey = formattedDate + "_" + originalFilename.substring(0, Math.min(originalFilename.length()-4, 5));
             ObjectMetadata metadata = new ObjectMetadata()
             metadata.setContentType("application/pdf")
-            InputStream inputStream = new ByteArrayInputStream(compressedPdfStream.toByteArray())
-            s3Client.putObject(new PutObjectRequest(s3BucketName, objectKey, inputStream, metadata)
+
+            //send pdf in minio cloud
+            s3Client.putObject(new PutObjectRequest(s3BucketName, objectKey, compressedPdfStream, metadata)
                     .withCannedAcl(CannedAccessControlList.PublicRead))
 
             // Construct permanent URL
@@ -67,83 +57,4 @@ class MinIOFileService {
             return "Error: ${e.message}"
         }
     }
-
-    private ByteArrayOutputStream compressPdf(File inputFile) throws IOException, DocumentException {
-        PdfReader reader = new PdfReader(new FileInputStream(inputFile))
-        ByteArrayOutputStream outputStream = new ByteArrayOutputStream()
-        PdfStamper stamper = new PdfStamper(reader, outputStream)
-
-        for (int i = 1; i <= reader.numberOfPages; i++) {
-            PdfDictionary pageDict = reader.getPageN(i)
-            PdfDictionary resources = pageDict.getAsDict(PdfName.RESOURCES)
-
-            if (resources != null) {
-                PdfDictionary xObjects = resources.getAsDict(PdfName.XOBJECT)
-                if (xObjects != null) {
-                    for (PdfName key : xObjects.getKeys()) {
-                        PdfObject obj = xObjects.getDirectObject(key)
-                        if (obj instanceof PRStream) {
-                            PRStream stream = (PRStream) obj
-                            PdfObject subtype = stream.get(PdfName.SUBTYPE)
-
-                            if (PdfName.IMAGE.equals(subtype)) {
-                                byte[] compressedImage = compressImageStream(stream)
-                                if (compressedImage != null) {
-                                    stream.setData(compressedImage, false, PdfStream.BEST_COMPRESSION)
-                                    stream.put(PdfName.FILTER, PdfName.DCTDECODE)
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        stamper.setFullCompression()
-        stamper.close()
-        reader.close()
-
-        return outputStream
-    }
-
-    private byte[] compressImageStream(PRStream stream) throws IOException {
-        byte[] imgBytes = PdfReader.getStreamBytesRaw(stream)
-        if (imgBytes == null || imgBytes.length == 0) {
-            return null
-        }
-
-        BufferedImage img = ImageIO.read(new ByteArrayInputStream(imgBytes))
-        if (img == null) {
-            return null
-        }
-
-        boolean isBlackWhite = (img.getType() == BufferedImage.TYPE_BYTE_BINARY)
-
-        int newWidth = Math.max(1, img.getWidth())
-        int newHeight = Math.max(1, img.getHeight())
-
-        BufferedImage resizedImg = new BufferedImage(newWidth, newHeight, isBlackWhite ? BufferedImage.TYPE_BYTE_GRAY : BufferedImage.TYPE_INT_RGB)
-        Graphics2D g = resizedImg.createGraphics()
-        g.drawImage(img, 0, 0, newWidth, newHeight, null)
-        g.dispose()
-
-        ByteArrayOutputStream baos = new ByteArrayOutputStream()
-        ImageWriter writer = ImageIO.getImageWritersByFormatName("jpeg").next()
-        ImageWriteParam param = writer.getDefaultWriteParam()
-
-        if (param.canWriteCompressed()) {
-            param.setCompressionMode(ImageWriteParam.MODE_EXPLICIT)
-            param.setCompressionQuality(isBlackWhite ? 0.7f : 0.2f)
-        }
-
-        ImageOutputStream ios = ImageIO.createImageOutputStream(baos)
-        writer.setOutput(ios)
-        writer.write(null, new IIOImage(resizedImg, null, null), param)
-        ios.close()
-        baos.close()
-
-        return baos.toByteArray()
-    }
 }
-
-

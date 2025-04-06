@@ -42,10 +42,7 @@ grails.project.dependency.resolution = {
 
     }
     grails.project.dependency.resolver = "maven"
-    grails.war.dependencies = {
-        // Adding the local JAR similar to Maven-style
-        runtime files('lib/ghost4j-1.0.1.jar')
-    }
+
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
@@ -70,8 +67,7 @@ grails.project.dependency.resolution = {
         compile 'org.apache.httpcomponents:httpclient:4.5.13'
         compile 'org.apache.httpcomponents:httpcore:4.4.13'
 
-        // Add Joda-Time dependency
-        compile 'joda-time:joda-time:2.10.10'
+
         // ----end minio---
 
 
@@ -82,6 +78,8 @@ grails.project.dependency.resolution = {
         runtime ":hibernate:$grailsVersion"
         runtime ":jquery:1.8.3"
         runtime ":resources:1.1.6"
+        compile ':joda-time:1.4'
+
 
         // Uncomment these (or add new ones) to enable additional resources capabilities
         //runtime ":zipped-resources:1.0"

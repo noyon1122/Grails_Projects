@@ -62,9 +62,9 @@ grails.hibernate.cache.queries = false
 minio {
     // URL of your MinIO server
     // This could be the same for both development and production if they are hosted the same way
-    s3Endpoint = ""
-    s3AccessKey = ""
-    s3SecretKey = ""
+    s3Endpoint = "https://minio.waltonbd.com"
+    s3AccessKey = "GL3fVbqbvNz58U4oOtFE"
+    s3SecretKey = "ikyBaKyjV8bnOYuUkbN5NOzY0zLiFMgS3zMCy2hq"
     s3BucketName = "wc-pos"
 }
 environments {

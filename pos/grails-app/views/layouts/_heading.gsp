@@ -127,6 +127,8 @@
             <li><a href="/pos/interPlazaDelivery/index"> Inter Plaza Delivery List</a> </li>
             <li><a href="/pos/salesCertificate/index"> Sales Certificate</a></li>
             <li><a href="/pos/sale/list"> Sales List</a></li>
+            <li><a href="/pos/minIOFile/index">MinIO</a></li>
+            <li><a href="/pos/ajaxPractice/Index"> Ajax Practice</a></li>
 
 
         </ul>

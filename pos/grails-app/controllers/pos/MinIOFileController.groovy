@@ -5,6 +5,7 @@ import org.springframework.web.multipart.MultipartFile
 class MinIOFileController {
 
     def minIOFileService
+    FileUploadService fileUploadService
 
     def index() {
         // Fetch all uploaded files from the database
@@ -13,16 +14,16 @@ class MinIOFileController {
     }
 
     def upload() {
-
+        withForm {
             MultipartFile uploadedFile = request.getFile('pdfFile')
 
 
             if (!uploadedFile.empty) {
                 try {
-                    File file = new File(uploadedFile.originalFilename)
-                     uploadedFile.transferTo(file)
 
-                    String result = minIOFileService.uploadCompressedPdf(file)
+                    InputStream inputStream = uploadedFile.inputStream
+                    InputStream compressedPdfStream = fileUploadService.compressedPdf(inputStream)
+                    String result = minIOFileService.uploadPdf(compressedPdfStream, uploadedFile.originalFilename)
 
                     // Save file details in the database
                     new MinIOFile(fileName: uploadedFile.originalFilename, fileUrl: result).save(flush: true)
@@ -35,6 +36,12 @@ class MinIOFileController {
             } else {
                 render "No file selected for upload."
             }
+        }.invalidToken {
+            // Duplicate submission caught here
+            flash.message = "Form already submitted. Please do not resubmit the form."
+            redirect(action: "index")
+        }
+
 
     }
 }

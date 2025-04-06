@@ -16,25 +16,15 @@ class FileUploadController {
     FileUploadService fileUploadService
 
     def upload() {
-        def file = request.getFile('file')
+        def uploadedFile = request.getFile('file')
         if (!file || file.empty) {
             flash.message = "No file uploaded!"
             redirect(action: "index")
             return
         }
 
-        // Ensure upload directory exists
-        File uploadDir = new File("web-app/uploads")
-        if (!uploadDir.exists()) {
-            uploadDir.mkdirs()
-        }
-
-        // Save the uploaded file
-        File savedFile = new File(uploadDir, file.originalFilename)
-        file.transferTo(savedFile)
-
-        // Compress the PDF
-        File compressedFile = fileUploadService.compressPdf(savedFile)
+        InputStream inputStream = uploadedFile.inputStream
+        InputStream compressedInputStream = fileUploadService.compressedPdf(inputStream)
 
         flash.message = "File uploaded and compressed successfully!"
         redirect(action: "download", params: [fileName: compressedFile.name])

@@ -4,18 +4,18 @@
      <g:render template="/layouts/heading" />
 
 </head>
-<body class="sale-body">
-    <div class="sale-header">Product List</div>
-    <div class="sale-search">
-        <g:form action="search" method="GET" class="sale-form">
-            <g:textField name="invoiceNo" class="sale-input" />
-            <g:submitButton name="Search" value="Search" class="sale-submit" />
+<body class="product-body">
+    <div class="product-header">Product List</div>
+    <div class="product-search">
+        <g:form action="search" method="GET" class="product-form">
+            <g:textField name="invoiceNo" class="product-input" />
+            <g:submitButton name="Search" value="Search" class="product-submit" />
         </g:form>
     </div>
      <div>
      <g:link action="create">New Product list</g:link>
      </div>
-    <table class="sale-table">
+    <table class="product-table">
         <thead>
             <tr>
                 <th>Model</th>
@@ -30,7 +30,7 @@
 
         <tbody>
             <g:each var="product" in="${products}">
-                <tr class="sale-row" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
+                <tr class="product-row" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
                     <td>${product.model}</td>
                     <td>${product.organization}</td>
                     <td>${product.code}</td>
@@ -39,8 +39,8 @@
                     <td>${product.description}</td>
 
 
-                    <td class="sale-actions">
-                        <g:link action="view" id="${sale.id}" class="sale-action view">View</g:link>
+                    <td class="product-actions">
+                        <g:link action="view" id="${product.id}" class="product-action view">View</g:link>
                     </td>
                 </tr>
             </g:each>

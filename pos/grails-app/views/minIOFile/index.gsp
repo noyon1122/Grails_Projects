@@ -5,7 +5,18 @@
      <g:render template="/layouts/heading" />
 </head>
 <body>
-    <h2>Uploaded Files</h2>
+    <h2>Upload File</h2>
+
+   <g:form useToken="true" action="upload" method="POST" enctype="multipart/form-data">
+       <input type="file" name="pdfFile" required />
+       <button type="submit">Upload</button>
+  </g:form>
+
+   <g:if test="${flash.message}">
+       <div class="message" style="color: green; margin-bottom: 10px;">
+           ${flash.message}
+       </div>
+   </g:if>
 
     <table border="1">
         <tr>
@@ -20,10 +31,6 @@
         </g:each>
     </table>
 
-    <h2>Upload File</h2>
-    <form action="${createLink(controller: 'minIOFile', action: 'upload')}" method="POST" enctype="multipart/form-data">
-        <input type="file" name="pdfFile" required />
-        <button type="submit">Upload</button>
-    </form>
+
 </body>
 </html>

@@ -1,0 +1,60 @@
+What Is a Transaction?
+
+A transaction is a sequence of database operations that either:
+
+..All succeed (data is saved), or
+
+..All fail (nothing is saved)
+
+
+Benefits: This prevents partial or corrupt data
+
+
+Example:
+
+@Transactional
+def saveSomething() {
+    def user = new User(name: "Alice")
+    user.save(failOnError: true)
+
+    def order = new Order(user: user, amount: 100)
+    order.save(failOnError: true)
+}
+
+If both succeed, data is saved.
+
+
+Error:
+@Transactional
+def saveSomething() {
+    def user = new User(name: "Bob")
+    user.save(failOnError: true)
+
+    // Error: divide by zero
+    def fail = 1 / 0
+
+    def order = new Order(user: user, amount: 200)
+    order.save(failOnError: true)
+}
+
+Result: Nothing is saved — not the user, not the order — because the transaction rolls back due to the error.
+
+
+Summery:
+
+Step	What Happens
+
+1	Start a transaction
+2	Perform database operations
+3	If all succeed → commit the transaction
+4	If any fail → roll back everything
+
+
+
+
+
+
+
+
+
+
