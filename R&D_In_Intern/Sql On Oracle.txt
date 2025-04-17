@@ -1,0 +1,14 @@
+*** Show first 5 rows from database
+
+syntax:
+
+SELECT column_name(s)
+FROM table_name
+ORDER BY column_name(s) //this is optional
+FETCH FIRST 5 ROWS ONLY;
+
+
+*** show 1 percent rows from database
+
+syntax:
+SELECT  * FROM pos_plazas FETCH FIRST 1 PERCENT ROWS ONLY;

@@ -11,4 +11,6 @@ class AjaxPracticeController {
         render data as JSON
 
     }
+
+
 }

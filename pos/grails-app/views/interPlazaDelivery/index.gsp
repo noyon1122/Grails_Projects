@@ -1,81 +1,150 @@
-<html>
+<html lang="en">
+
 <head>
-    <title>Inter Plaza Delivery List</title>
+    <title>Customer List</title>
     <g:render template="/layouts/heading" />
+
+    <style>
+      .body-div {
+            margin: 0 80px; /* 40px margin on left and right */
+            font-size: 14px; /* Smaller text size */
+            font-family: Arial, sans-serif; /* Clean font */
+        }
+
+        /* Header styling */
+        .header-div {
+            font-size: 24px;
+            font-weight: bold;
+
+            padding:10px 5px;
+            border: 1px solid #ddd;
+            background-color:#eef6f6;
+
+        }
+
+         .application-div  {
+        display: flex; /* Enables Flexbox */
+        flex-direction: row; /* Stack items vertically */
+        margin:10px 0px;
+        gap:10px;
+
+         }
+
+        /* Form styling */
+        .search-div{
+        border: 1px solid #ddd;
+        padding:15px 20px;
+
+        }
+        .search-form {
+            margin-bottom: 20px;
+            gap:10px;
+             display: flex; /* Enables Flexbox */
+            flex-direction: column;
+            gap:10px;
+        }
+
+        .search-input {
+            padding: 5px;
+            font-size: 12px;
+        }
+
+        .search-submit {
+            padding: 5px 10px;
+            font-size: 12px;
+            width:12%;
+        }
+
+        /* Table styling */
+        .table-div {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-div th,
+        .table-div td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-size:12px;
+        }
+
+        .table-div th {
+
+            font-weight: bold;
+            font-size: 13px; /* Smaller table header */
+        }
+
+        /* Row hover effect */
+        .table-row:hover {
+            background-color: #f5f5f5;
+
+        }
+
+        /* Action links */
+        .action-links .action-link {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 12px; /* Smaller action text */
+        }
+    </style>
 </head>
-<body>
 
-    <!-- Page Title -->
-    <div class="page-title">Transfer Do List</div>
+<body class="">
 
-    <!-- Navigation Links -->
-    <div class="nav-links">
-        <g:link action="index">🏠 Home</g:link>
-        <g:link action="create">➕ New InterPlaza Delivery</g:link>
-    </div>
+  <div class="body-div">
+    <div class="header-div">InterPlazaDelivery List</div>
+     <div class="application-div">
+     <g:link action="" >Home</g:link>
+     <g:link action="create" > New InterPlazaDelivery Application </g:link>
 
-    <!-- Search Form -->
-    <div class="search-container">
-        <g:form action="search" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+     </div>
 
-            <div style="display: flex; gap: 30px;">
-                <div>
-                    <label>Delivery From</label>
-                </div>
-                <div>
-                    <label>Delivery To</label>
-                </div>
-            </div>
+      <div class="search-div">
+          <g:form action="list" method="GET" class="search-form">
+             <div>
+              <g:textField name="saleNo"  class="search-input" placeholder="Enter Invoice Number" />
+               <g:textField name="accountNo"  class="search-input" placeholder="Customer Account No" />
+              <g:textField name="mobile"  class="search-input" placeholder="Customer Mobile No" />
+              </div>
+              <div>
+               <input type="date" name="fromDate" class="search-input" />
+               <input type="date" name="toDate" class="search-input" />
 
-            <div style="display: flex; gap: 30px;">
-                <div>
-                    <label>From Date</label>
-                    <input type="date" name="fromDate" class="search-input" />
-                </div>
-                <div>
-                    <label>To Date</label>
-                    <input type="date" name="toDate" class="search-input" />
-                </div>
-            </div>
+               </div>
 
-            <div>
-                <label>Code</label>
-                <g:textField name="code" class="search-input" />
-            </div>
+              <g:submitButton name="search" value="Search" class="search-submit" />
+          </g:form>
+      </div>
 
-            <g:submitButton name="Search" value="Search" class="search-button" />
-        </g:form>
-    </div>
-
-    <!-- Delivery Table -->
-    <table class="customer-table">
-        <thead>
-            <tr>
-                <th>Code</th>
-                <th>Delivery From Plaza</th>
-                <th>Delivery To Plaza</th>
-                <th>Disbursed Qty</th>
-                <th>Received Qty</th>
-                <th>Created Date</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <g:each var="interPlaza" in="${interPlazaDeliveryLists}">
-                <tr>
-                    <td>${interPlaza.code}</td>
-                    <td>${interPlaza.deliveryFrom}</td>
-                    <td>${interPlaza.deliveryTo}</td>
-                    <td>${interPlaza.disbursedQty}</td>
-                    <td>${interPlaza.receivedQty}</td>
-                    <td><g:formatDate date="${interPlaza.createdDate}" format="dd/MM/yyyy" /></td>
-                    <td class="action-links">
-                        <g:link action="view" id="${interPlaza.id}" class="view-link">View</g:link>
-                    </td>
-                </tr>
-            </g:each>
-        </tbody>
-    </table>
-
+<table class="table-div">
+<thead>
+<tr>
+    <th>Code</th>
+    <th>Delivery From Plaza</th>
+    <th>Delivery To Plaza</th>
+    <th>Disbursed Qty</th>
+    <th>Received Qty</th>
+    <th>Created Date</th>
+    <th>Action</th>
+</tr>
+</thead>
+<tbody>
+<g:each var="interPlaza" in="${interPlazaDeliveryLists}">
+    <tr>
+        <td>${interPlaza.code}</td>
+        <td>${interPlaza.deliveryFrom}</td>
+        <td>${interPlaza.deliveryTo}</td>
+        <td>${interPlaza.disbursedQty}</td>
+        <td>${interPlaza.receivedQty}</td>
+        <td><g:formatDate date="${interPlaza.createdDate}" format="dd/MM/yyyy" /></td>
+        <td class="action-links">
+            <g:link action="view" id="${interPlaza.id}" class="view-link">View</g:link>
+        </td>
+    </tr>
+</g:each>
+</tbody>
+</table>
+  </div>
 </body>
-</html>

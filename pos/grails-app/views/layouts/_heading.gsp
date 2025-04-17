@@ -124,11 +124,11 @@
              <li><a href="/pos/product/list"> Product List</a></li>
              <li><a href="/pos/customer/index"> Customer List </a> </li>
             <li><a href="/pos/dealer/index"> Dealer List</a> </li>
-            <li><a href="/pos/interPlazaDelivery/index"> Inter Plaza Delivery List</a> </li>
-            <li><a href="/pos/salesCertificate/index"> Sales Certificate</a></li>
-            <li><a href="/pos/sale/list"> Sales List</a></li>
+            <li><a href="/pos/interPlazaDelivery/index"> Inter Plaza Delivery</a> </li>
+            <li><a href="/pos/salesCertificate/index">Sales</a></li>
             <li><a href="/pos/minIOFile/index">MinIO</a></li>
             <li><a href="/pos/ajaxPractice/Index"> Ajax Practice</a></li>
+            <li><a href="/pos/sendMail/Index"> Send Mail</a></li>
 
 
         </ul>

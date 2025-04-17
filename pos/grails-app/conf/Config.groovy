@@ -67,6 +67,18 @@ minio {
     s3SecretKey = "ikyBaKyjV8bnOYuUkbN5NOzY0zLiFMgS3zMCy2hq"
     s3BucketName = "wc-pos"
 }
+
+smtp {
+    host = "smtp.gmail.com"
+    port = 587
+    username = "noyonhossain1177@gmail.com"
+    password = "dlqcwaedioycbktw"
+    from     = "noyonhossain1177@gmail.com"
+    props = [
+            "mail.smtp.auth": "true",
+            "mail.smtp.starttls.enable": "true"
+    ]
+}
 environments {
     development {
         grails.logging.jul.usebridge = true

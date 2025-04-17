@@ -12,33 +12,46 @@ Benefits: This prevents partial or corrupt data
 
 Example:
 
-@Transactional
-def saveSomething() {
-    def user = new User(name: "Alice")
-    user.save(failOnError: true)
+ def update(Long id) {
 
-    def order = new Order(user: user, amount: 100)
-    order.save(failOnError: true)
-}
+        // Using withTransaction
+        Customer.withTransaction { tx ->
+            try {
+                // Fetch the customer by ID
+                def customer = Customer.get(id)
 
-If both succeed, data is saved.
+                if (!customer) {
+                    flash.message = "Customer not found with ID: $id"
+                    redirect(action: "edit")  // Or any appropriate redirection
+                    return
+                }
 
+                // Update customer information from the params
+                customer.accountNo = params.accountNo
+                customer.customerName = params.customerName
+                customer.customerAddress = params.customerAddress
+                customer.custId = params.custId
+                customer.customerNid = params.customerNid
 
-Error:
-@Transactional
-def saveSomething() {
-    def user = new User(name: "Bob")
-    user.save(failOnError: true)
+                // Save the updated customer object
+                if (!customer.save(flush: true)) {
+                    tx.setRollbackOnly()  // Mark for rollback if save fails
+                    flash.message = "Failed to update customer. Errors: ${customer.errors}"
+                    redirect(action: "edit", params: [id: id])  // Redirect back to form for correction
+                    return
+                }
 
-    // Error: divide by zero
-    def fail = 1 / 0
+                // Success - redirect to a success page or list
+                flash.message = "Customer updated successfully!"
+                redirect(action: "index")  // Or any appropriate action
 
-    def order = new Order(user: user, amount: 200)
-    order.save(failOnError: true)
-}
-
-Result: Nothing is saved — not the user, not the order — because the transaction rolls back due to the error.
-
+            } catch (Exception e) {
+                // If an exception occurs, rollback the transaction
+                tx.setRollbackOnly()
+                flash.message = "Error: ${e.message}"
+                redirect(action: "edit", params: [id: id])  // Stay on the same page
+            }
+        }
 
 Summery:
 

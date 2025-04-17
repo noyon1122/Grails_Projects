@@ -16,8 +16,6 @@ class MinIOFileController {
     def upload() {
         withForm {
             MultipartFile uploadedFile = request.getFile('pdfFile')
-
-
             if (!uploadedFile.empty) {
                 try {
 

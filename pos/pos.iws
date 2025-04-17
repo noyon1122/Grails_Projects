@@ -5,57 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45a6f015-4d7b-465d-871a-cc8425e8cab9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/grails-app/views/ajaxPractice/index.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/division/ajaxCode.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/division/index.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/product/create.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../walton-pos/grails-app/views/dealer/create.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../walton-pos/grails-app/views/plaza/index.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plaza-pos/plaza-pos.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../plaza-pos/plaza-pos.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-mb-example-file.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Change Request Management EBS.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMG_20250312_144343.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mark_Sheet.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilepdf.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noyon_Hossain_Mark_Sheet.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/abcd.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/efgh.pdf" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/sendMail/addTemplates.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/sendMail/index.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/tempUsers/index.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../R&amp;D_In_Intern/Transactions In Database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../R&amp;D_In_Intern/Transactions In Database.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/controllers/pos/FileUploadController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/pos/FileUploadController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/controllers/pos/AjaxPracticeController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/pos/AjaxPracticeController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/controllers/pos/CustomerController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/pos/CustomerController.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/controllers/pos/MinIOFileController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/pos/MinIOFileController.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/controllers/pos/ProductController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/pos/ProductController.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/services/pos/FileUploadService.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/services/pos/FileUploadService.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/services/pos/MinIOFileService.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/services/pos/MinIOFileService.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/customer/edit.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/customer/edit.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/customer/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/customer/index.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/dealer/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/dealer/index.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/interPlazaDelivery/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/interPlazaDelivery/index.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/views/layouts/_heading.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/layouts/_heading.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/views/minIOFile/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/minIOFile/index.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/plaza/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/plaza/index.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/views/product/list.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/product/list.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/joda-time-2.10.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdf24_converted.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/salesCertificate/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/salesCertificate/index.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pos.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/pos.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pos.iws" beforeDir="false" afterPath="$PROJECT_DIR$/pos.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ApplicationResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ApplicationResources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BootStrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BootStrap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure6.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BuildConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BuildConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure2_closure4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure2_closure5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MinIOFileService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/UrlMappings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UrlMappings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pos/AjaxPracticeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/AjaxPracticeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pos/CustomerController$_search_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pos/CustomerController$_search_closure1_closure2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/CustomerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/Dealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/Dealer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/DealerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/DealerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pos/District.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/District.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pos/DistrictController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/DistrictController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pos/Division.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/Division.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pos/DivisionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/DivisionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/FileUpload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/FileUpload.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/FileUploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/FileUploadController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/FileUploadService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/FileUploadService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/InterPlazaDelivery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/InterPlazaDelivery.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/InterPlazaDeliveryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/InterPlazaDeliveryController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/MinIOFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/MinIOFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pos/MinIOFileController$_upload_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/MinIOFileController$_upload_closure1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pos/MinIOFileController$_upload_closure2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/MinIOFileController$_upload_closure2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/MinIOFileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/MinIOFileController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/MinIOFileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/MinIOFileService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pos/Plaza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/Plaza.class" afterDir="false" />
@@ -71,35 +74,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/pos/SalesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pos/SalesController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/stacktrace.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/stacktrace.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_pdf (1).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_pdf.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/grails-app/controllers/walton/pos/DealerController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/grails-app/controllers/walton/pos/DealerController.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/grails-app/controllers/walton/pos/PlazaController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/grails-app/controllers/walton/pos/PlazaController.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/grails-app/domain/walton/pos/Dealer.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/grails-app/domain/walton/pos/Dealer.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/grails-app/views/dealer/add.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/grails-app/views/dealer/add.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/ApplicationResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/ApplicationResources.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/BootStrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/BootStrap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/BuildConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/BuildConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/DataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/UrlMappings.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/UrlMappings.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/resources.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/Dealer$__clinit__closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/Dealer$__clinit__closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/Dealer$__clinit__closure2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/Dealer$__clinit__closure2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/Dealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/Dealer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/DealerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/DealerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/PlazaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/PlazaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/Sales.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/Sales.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/SalesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/SalesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/SalesDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/SalesDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/SalesDetailsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/SalesDetailsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/SalesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/SalesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/UniqueDealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/UniqueDealer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/UniqueDealerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/classes/walton/pos/UniqueDealerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../walton-pos/target/stacktrace.log" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/target/stacktrace.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../walton-pos/walton-pos.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../walton-pos/walton-pos.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +134,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/WALTON/Desktop/Grails_Projects/pos&quot;
+    &quot;last_opened_file_path&quot;: &quot;E:/workplace/projects/POS_DEV&quot;
   }
 }</component>
   <component name="RecentsManager">
