@@ -1,0 +1,37 @@
+<%@ page import="pos.Products" %>
+
+<div class="fieldcontain ${hasErrors(bean: productsInstance, field: 'products', 'error')} required">
+	<label for="products">
+		<g:message code="products.products.label" default="Product Category:" />
+        <span class="required-indicator">*</span>
+	</label>
+	<g:select id="products" name="products.id" from="${selectedProduct?.list(){order('description','asc')}}" optionKey="id" optionValue="description" required="" value="${productsInstance?.products?.id}" class="mid-szed" noSelection="[null:'-: Parent Product :-']"/>
+</div>
+
+%{--<div class="fieldcontain ${hasErrors(bean: productsInstance, field: 'code', 'error')} required">
+	<label for="code">
+		<g:message code="products.code.label" default="Code" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="code" maxlength="255" required="" value="${productsInstance?.code}" class="mid-szed"/>
+</div>--}%
+
+<div class="fieldcontain ${hasErrors(bean: productsInstance, field: 'description', 'error')}">
+	<label for="description">
+		<g:message code="products.description.label" default="Description:" />
+		%{--<span class="required-indicator">*</span>--}%
+	</label>
+    <g:fieldValue field="description" bean="${productsInstance}"></g:fieldValue>
+	%{--<g:textField name="description" maxlength="255" required="" value="${productsInstance?.description}" class="mid-szed"/>--}%
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: productsInstance, field: 'model', 'error')}">
+	<label for="model">
+		<g:message code="products.model.label" default="Model:" />
+		%{--<span class="required-indicator">*</span>--}%
+	</label>
+    <g:fieldValue field="model" bean="${productsInstance}"></g:fieldValue>
+	%{--<g:textField name="model" maxlength="255" required="" value="${productsInstance?.model}" class="mid-szed"/>--}%
+</div>
+
+

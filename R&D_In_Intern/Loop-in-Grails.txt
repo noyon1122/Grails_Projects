@@ -1,0 +1,16 @@
+def userList = User.list()
+
+// Using each
+userList.each { user ->
+    println user.name
+}
+
+// Using for loop
+for (user in userList) {
+    println user.name
+}
+
+// Using traditional Java-style
+for (int i = 0; i < userList.size(); i++) {
+    println userList[i].name
+}
